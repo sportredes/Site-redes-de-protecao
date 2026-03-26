@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sport Redes de Proteção</title>
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 
 <style>
 * {
@@ -20,6 +20,7 @@ body {
   color: #333;
 }
 
+/* HEADER */
 header {
   background: linear-gradient(90deg, #0d1b2a, #1b263b);
   color: white;
@@ -29,32 +30,36 @@ header {
 
 header h1 {
   font-size: 28px;
+  font-weight: 700;
 }
 
+/* HERO */
 .hero {
-  height: 90vh;
-  background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+  height: 95vh;
+  background: url('https://images.unsplash.com/photo-1581578731548-c64695cc6952') center/cover;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   color: white;
   text-align: center;
+  padding: 20px;
 }
 
 .hero h2 {
-  font-size: 45px;
+  font-size: 48px;
   margin-bottom: 15px;
 }
 
 .hero p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 20px;
+  margin-bottom: 25px;
+  max-width: 600px;
 }
 
 .btn {
-  padding: 12px 25px;
-  margin: 8px;
+  padding: 14px 28px;
+  margin: 10px;
   border-radius: 30px;
   text-decoration: none;
   color: white;
@@ -66,38 +71,53 @@ header h1 {
 .instagram { background: #E1306C; }
 
 .btn:hover {
-  transform: scale(1.05);
+  transform: scale(1.08);
 }
 
+/* SECTION */
 section {
-  padding: 60px 20px;
+  padding: 70px 20px;
   max-width: 1100px;
   margin: auto;
 }
 
 h2 {
   text-align: center;
-  margin-bottom: 30px;
+  margin-bottom: 40px;
+  font-size: 32px;
 }
 
+/* GRID */
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-  gap: 20px;
+  gap: 25px;
 }
 
+/* CARD */
 .card {
   background: white;
   padding: 25px;
   border-radius: 12px;
-  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  box-shadow: 0 8px 25px rgba(0,0,0,0.08);
   transition: 0.3s;
 }
 
 .card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-6px);
 }
 
+/* IMAGENS */
+.img {
+  width: 100%;
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 15px;
+}
+
+/* FOOTER */
 footer {
   background: #0d1b2a;
   color: white;
@@ -105,7 +125,7 @@ footer {
   padding: 30px;
 }
 
-/* BOTÃO FLUTUANTE */
+/* BOTÕES FLUTUANTES */
 .floating {
   position: fixed;
   bottom: 20px;
@@ -132,71 +152,102 @@ footer {
 
 <header>
   <h1>Sport Redes de Proteção</h1>
+  <p>Atendemos São Paulo e Litoral</p>
 </header>
 
+<!-- HERO -->
 <div class="hero">
-  <h2>Segurança para quem você ama</h2>
-  <p>Instalação profissional com qualidade e garantia</p>
+  <h2>Segurança para Crianças e Pets</h2>
+  <p>Instalação profissional de redes de proteção para sua casa, apartamento ou quadra esportiva</p>
 
-  <a class="btn whatsapp" href="https://wa.me/5599999999999" target="_blank">WhatsApp</a>
-  <a class="btn instagram" href="https://instagram.com/seuinstagram" target="_blank">Instagram</a>
+  <a class="btn whatsapp" href="https://wa.me/5511961628397" target="_blank">
+    Chamar no WhatsApp
+  </a>
+
+  <a class="btn instagram" href="https://instagram.com/sportredes_" target="_blank">
+    Ver Instagram
+  </a>
 </div>
 
+<!-- SOBRE -->
 <section>
-  <h2>Sobre Nós</h2>
+  <h2>Sobre a Empresa</h2>
   <p style="text-align:center; max-width:700px; margin:auto;">
-    A Sport Redes de Proteção oferece soluções completas em segurança residencial e comercial.
-    Trabalhamos com materiais de alta resistência e equipe especializada, garantindo tranquilidade total para nossos clientes.
+    A <strong>Sport Redes de Proteção</strong> é especializada em instalação de redes de alta resistência,
+    oferecendo segurança completa para famílias, crianças e pets. Atuamos em São Paulo e litoral,
+    garantindo qualidade, rapidez e acabamento impecável.
   </p>
 </section>
 
+<!-- SERVIÇOS -->
 <section>
-  <h2>Serviços</h2>
+  <h2>Nossos Serviços</h2>
+
   <div class="grid">
 
     <div class="card">
-      <h3>Janelas</h3>
-      <p>Proteção segura para crianças e animais.</p>
+      <div class="img" style="background-image:url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c')"></div>
+      <h3>Redes para Janelas</h3>
+      <p>Proteção essencial para evitar quedas e garantir segurança total.</p>
     </div>
 
     <div class="card">
-      <h3>Sacadas</h3>
-      <p>Segurança sem comprometer a estética.</p>
+      <div class="img" style="background-image:url('https://images.unsplash.com/photo-1560185007-cde436f6a4d0')"></div>
+      <h3>Redes para Sacadas</h3>
+      <p>Segurança com acabamento discreto e elegante.</p>
     </div>
 
     <div class="card">
-      <h3>Quadras</h3>
-      <p>Redes resistentes para áreas esportivas.</p>
+      <div class="img" style="background-image:url('https://images.unsplash.com/photo-1599058917212-d750089bc07e')"></div>
+      <h3>Quadras Esportivas</h3>
+      <p>Redes resistentes para contenção de bolas e proteção do espaço.</p>
     </div>
 
     <div class="card">
-      <h3>Escadas</h3>
-      <p>Evite acidentes em áreas elevadas.</p>
+      <div class="img" style="background-image:url('https://images.unsplash.com/photo-1582582494700-0b5a3e7f3d61')"></div>
+      <h3>Escadas e Varandas</h3>
+      <p>Evite acidentes em áreas elevadas com instalação profissional.</p>
     </div>
 
   </div>
 </section>
 
+<!-- DIFERENCIAIS -->
 <section>
-  <h2>Diferenciais</h2>
+  <h2>Por que escolher a Sport Redes?</h2>
+
   <div class="grid">
+    <div class="card">✔ Atendimento rápido via WhatsApp</div>
+    <div class="card">✔ Instalação profissional</div>
+    <div class="card">✔ Material de alta resistência</div>
+    <div class="card">✔ Segurança para crianças e pets</div>
+    <div class="card">✔ Atendemos SP e litoral</div>
+    <div class="card">✔ Ótimo custo-benefício</div>
+  </div>
+</section>
 
-    <div class="card">✔ Atendimento rápido</div>
-    <div class="card">✔ Equipe especializada</div>
-    <div class="card">✔ Material de qualidade</div>
-    <div class="card">✔ Garantia no serviço</div>
+<!-- CONTATO -->
+<section>
+  <h2>Fale Conosco</h2>
 
+  <div style="text-align:center;">
+    <p><strong>WhatsApp:</strong> (11) 96162-8397</p>
+    <p><strong>Instagram:</strong> @sportredes_</p>
+
+    <a class="btn whatsapp" href="https://wa.me/5511961628397" target="_blank">
+      Solicitar Orçamento
+    </a>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Sport Redes de Proteção</p>
+  <p>© 2026 Sport Redes de Proteção - Todos os direitos reservados</p>
 </footer>
 
 <!-- BOTÕES FLUTUANTES -->
 <div class="floating">
-  <a class="whats-float" href="https://wa.me/5599999999999" target="_blank">💬</a>
-  <a class="insta-float" href="https://instagram.com/seuinstagram" target="_blank">📷</a>
+  <a class="whats-float" href="https://wa.me/5511961628397" target="_blank">💬</a>
+  <a class="insta-float" href="https://instagram.com/sportredes_" target="_blank">📷</a>
 </div>
 
 </body>
