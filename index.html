@@ -1,193 +1,203 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Sport Redes de Proteção</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sport Redes de Proteção</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: #f5f5f5;
-      color: #333;
-    }
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
 
-    header {
-      background: #0d1b2a;
-      color: white;
-      padding: 20px;
-      text-align: center;
-    }
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
 
-    nav {
-      background: #1b263b;
-      padding: 10px;
-      text-align: center;
-    }
+body {
+  background: #f4f6f9;
+  color: #333;
+}
 
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
+header {
+  background: linear-gradient(90deg, #0d1b2a, #1b263b);
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
 
-    section {
-      padding: 40px;
-      max-width: 1000px;
-      margin: auto;
-    }
+header h1 {
+  font-size: 28px;
+}
 
-    .hero {
-      background: url('https://images.unsplash.com/photo-1599420186946-7b8c2b6d9b79') no-repeat center;
-      background-size: cover;
-      color: white;
-      text-align: center;
-      padding: 100px 20px;
-    }
+.hero {
+  height: 90vh;
+  background: url('https://images.unsplash.com/photo-1600585154340-be6161a56a0c') center/cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  text-align: center;
+}
 
-    .hero h1 {
-      font-size: 40px;
-    }
+.hero h2 {
+  font-size: 45px;
+  margin-bottom: 15px;
+}
 
-    .btn {
-      display: inline-block;
-      margin: 10px;
-      padding: 12px 25px;
-      border-radius: 5px;
-      text-decoration: none;
-      color: white;
-      font-weight: bold;
-    }
+.hero p {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
 
-    .whatsapp {
-      background: #25D366;
-    }
+.btn {
+  padding: 12px 25px;
+  margin: 8px;
+  border-radius: 30px;
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  transition: 0.3s;
+}
 
-    .instagram {
-      background: #E1306C;
-    }
+.whatsapp { background: #25D366; }
+.instagram { background: #E1306C; }
 
-    .card {
-      background: white;
-      padding: 20px;
-      margin: 15px 0;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
-    }
+.btn:hover {
+  transform: scale(1.05);
+}
 
-    footer {
-      background: #0d1b2a;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-  </style>
+section {
+  padding: 60px 20px;
+  max-width: 1100px;
+  margin: auto;
+}
+
+h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.card {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+footer {
+  background: #0d1b2a;
+  color: white;
+  text-align: center;
+  padding: 30px;
+}
+
+/* BOTÃO FLUTUANTE */
+.floating {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
+
+.floating a {
+  display: block;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 50%;
+  color: white;
+  text-align: center;
+  font-size: 20px;
+}
+
+.whats-float { background: #25D366; }
+.insta-float { background: #E1306C; }
+
+</style>
 </head>
 
 <body>
 
 <header>
   <h1>Sport Redes de Proteção</h1>
-  <p>Segurança, qualidade e tranquilidade para sua família</p>
 </header>
 
-<nav>
-  <a href="#sobre">Sobre</a>
-  <a href="#servicos">Serviços</a>
-  <a href="#diferenciais">Diferenciais</a>
-  <a href="#contato">Contato</a>
-</nav>
+<div class="hero">
+  <h2>Segurança para quem você ama</h2>
+  <p>Instalação profissional com qualidade e garantia</p>
 
-<section class="hero">
-  <h1>Proteja quem você ama</h1>
-  <p>Instalação profissional de redes de proteção para casas e empresas</p>
+  <a class="btn whatsapp" href="https://wa.me/5599999999999" target="_blank">WhatsApp</a>
+  <a class="btn instagram" href="https://instagram.com/seuinstagram" target="_blank">Instagram</a>
+</div>
 
-  <!-- ALTERE O NÚMERO -->
-  <a class="btn whatsapp" href="https://wa.me/5599999999999" target="_blank">
-    Falar no WhatsApp
-  </a>
-
-  <!-- ALTERE O LINK -->
-  <a class="btn instagram" href="https://instagram.com/seuinstagram" target="_blank">
-    Ver Instagram
-  </a>
+<section>
+  <h2>Sobre Nós</h2>
+  <p style="text-align:center; max-width:700px; margin:auto;">
+    A Sport Redes de Proteção oferece soluções completas em segurança residencial e comercial.
+    Trabalhamos com materiais de alta resistência e equipe especializada, garantindo tranquilidade total para nossos clientes.
+  </p>
 </section>
 
-<section id="sobre">
-  <h2>Sobre a Empresa</h2>
-  <div class="card">
-    <p>
-      A <strong>Sport Redes de Proteção</strong> é especializada na instalação de redes de alta resistência,
-      oferecendo segurança para residências, apartamentos e estabelecimentos comerciais.
-    </p>
+<section>
+  <h2>Serviços</h2>
+  <div class="grid">
 
-    <p>
-      Trabalhamos com materiais certificados e equipe qualificada, garantindo um serviço
-      seguro, durável e com excelente acabamento.
-    </p>
-  </div>
-</section>
+    <div class="card">
+      <h3>Janelas</h3>
+      <p>Proteção segura para crianças e animais.</p>
+    </div>
 
-<section id="servicos">
-  <h2>Nossos Serviços</h2>
+    <div class="card">
+      <h3>Sacadas</h3>
+      <p>Segurança sem comprometer a estética.</p>
+    </div>
 
-  <div class="card">
-    <h3>Redes para Janelas</h3>
-    <p>Proteção ideal para evitar quedas, principalmente de crianças e pets.</p>
-  </div>
+    <div class="card">
+      <h3>Quadras</h3>
+      <p>Redes resistentes para áreas esportivas.</p>
+    </div>
 
-  <div class="card">
-    <h3>Redes para Sacadas</h3>
-    <p>Segurança sem comprometer a estética do ambiente.</p>
-  </div>
+    <div class="card">
+      <h3>Escadas</h3>
+      <p>Evite acidentes em áreas elevadas.</p>
+    </div>
 
-  <div class="card">
-    <h3>Quadras e Áreas Esportivas</h3>
-    <p>Instalação de redes resistentes para contenção de bolas e proteção do espaço.</p>
-  </div>
-
-  <div class="card">
-    <h3>Escadas e Varandas</h3>
-    <p>Prevenção de acidentes em áreas elevadas.</p>
   </div>
 </section>
 
-<section id="diferenciais">
-  <h2>Nossos Diferenciais</h2>
+<section>
+  <h2>Diferenciais</h2>
+  <div class="grid">
 
-  <div class="card">
-    <ul>
-      <li>✔ Equipe especializada</li>
-      <li>✔ Material de alta qualidade</li>
-      <li>✔ Instalação rápida e segura</li>
-      <li>✔ Excelente acabamento</li>
-      <li>✔ Atendimento personalizado</li>
-    </ul>
-  </div>
-</section>
+    <div class="card">✔ Atendimento rápido</div>
+    <div class="card">✔ Equipe especializada</div>
+    <div class="card">✔ Material de qualidade</div>
+    <div class="card">✔ Garantia no serviço</div>
 
-<section id="contato">
-  <h2>Contato</h2>
-
-  <div class="card">
-    <p><strong>WhatsApp:</strong> (99) 99999-9999</p>
-    <p><strong>Instagram:</strong> @seuinstagram</p>
-
-    <a class="btn whatsapp" href="https://wa.me/5599999999999" target="_blank">
-      Chamar no WhatsApp
-    </a>
-
-    <a class="btn instagram" href="https://instagram.com/seuinstagram" target="_blank">
-      Acessar Instagram
-    </a>
   </div>
 </section>
 
 <footer>
-  <p>© 2026 Sport Redes de Proteção - Todos os direitos reservados</p>
+  <p>© 2026 Sport Redes de Proteção</p>
 </footer>
+
+<!-- BOTÕES FLUTUANTES -->
+<div class="floating">
+  <a class="whats-float" href="https://wa.me/5599999999999" target="_blank">💬</a>
+  <a class="insta-float" href="https://instagram.com/seuinstagram" target="_blank">📷</a>
+</div>
 
 </body>
 </html>
