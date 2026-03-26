@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sport Redes de Proteção | Segurança de Elite</title>
+    <style>
+        :root {
+            --dark-bg: #0a0a0a;
+            --card-bg: #1a1a1a;
+            --gold: #d4af37;
+            --white: #ffffff;
+            --gray: #a0a0a0;
+            --whatsapp: #25d366;
+        }
+
+        body {
+            font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--dark-bg);
+            color: var(--white);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 20px;
+            text-align: center;
+            background: linear-gradient(to bottom, #111, var(--dark-bg));
+            border-bottom: 1px solid #333;
+        }
+
+        .logo-img {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 3px solid var(--gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.3);
+            object-fit: cover;
+        }
+
+        .hero {
+            padding: 60px 20px;
+            text-align: center;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('instalacao-sacada-lateral.png.jpeg');
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .hero h1 span { color: var(--gold); }
+
+        .btn-whatsapp {
+            display: inline-block;
+            background-color: var(--whatsapp);
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-weight: bold;
+            text-decoration: none;
+            font-size: 1.2em;
+            margin-top: 20px;
+            box-shadow: 0 4px 15px rgba(37, 211, 102, 0.4);
+            transition: 0.3s;
+        }
+
+        .btn-whatsapp:hover { transform: scale(1.05); }
+
+        .container { padding: 40px 20px; max-width: 1100px; margin: auto; }
+
+        .section-title {
+            text-align: center;
+            font-size: 2em;
+            margin-bottom: 40px;
+            border-bottom: 2px solid var(--gold);
+            display: inline-block;
+            padding-bottom: 10px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border-radius: 15px;
+            overflow: hidden;
+            border: 1px solid #333;
+            transition: 0.3s;
+        }
+
+        .card:hover { border-color: var(--gold); transform: translateY(-5px); }
+
+        .card img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+        }
+
+        .card-body { padding: 20px; text-align: center; }
+
+        footer {
+            background: #000;
+            padding: 40px 20px;
+            text-align: center;
+            border-top: 1px solid #333;
+            color: var(--gray);
+        }
+
+        @media (max-width: 600px) {
+            .hero h1 { font-size: 1.8em; }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <img src="logo-premium.png" alt="Sport Redes Logo" class="logo-img">
+    </header>
+
+    <section class="hero">
+        <h1>Proteção Total para <br><span>Sua Família e Seus Pets</span></h1>
+        <p>Especialistas em redes de alta resistência em São Paulo e região.</p>
+        <a href="https://wa.me/5511961628397" class="btn-whatsapp">Solicitar Orçamento Gratuito</a>
+    </section>
+
+    <div class="container" style="text-align: center;">
+        <h2 class="section-title">Nosso Portfólio</h2>
+        
+        <div class="grid">
+            <div class="card">
+                <img src="instalacao-seguranca-crianca.png.jpeg" alt="Segurança Infantil">
+                <div class="card-body"><h3>Segurança Infantil</h3></div>
+            </div>
+            <div class="card">
+                <img src="instalacao-janela-vista.png.jpeg" alt="Janelas">
+                <div class="card-body"><h3>Janelas e Sacadas</h3></div>
+            </div>
+            <div class="card">
+                <img src="instalacao-varanda-moderna.png.jpeg" alt="Varandas">
+                <div class="card-body"><h3>Varandas Gourmet</h3></div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>Sport Redes de Proteção © 2026</p>
+        <p>📍 São Paulo, SP | 📱 (11) 96162-8397</p>
+    </footer>
+
+</body>
+</html>
